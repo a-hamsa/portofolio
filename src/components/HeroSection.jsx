@@ -1,9 +1,9 @@
 const HeroSection = () => (
   <section
-    className="bg-gray-900 text-white h-screen flex items-center justify-center px-4"
+    className="bg-gray-900 text-white w-screen h-screen flex flex-col  items-center justify-center px-4"
     id="home"
   >
-    <div className="text-start h-auto flex flex-col items-start sm:flex-row sm:items-center sm:justify-between space-y-8 sm:space-y-0 sm:space-x-8 w-full max-w-5xl">
+    <div className="text-start h-auto flex flex-col items-center md:flex-row md:items-between md:justify-between px-40 w-full">
       <div className="flex flex-col space-y-4">
         <h1 className="text-4xl sm:text-5xl font-bold">
           Hello, I'm Ahmad Hamsa Pattuneri
@@ -21,12 +21,12 @@ const HeroSection = () => (
           </button>
         </div>
       </div>
-      <div className="relative h-[200px] flex items-center justify-center sm:justify-center">
-        <div className="absolute w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] bg-purple-600 rounded-full flex items-center justify-center"></div>
+      <div className="relative w-auto h-auto flex items-center justify-center md:justify-center mt-[60px] md:mt-0">
+        <div className="absolute w-[250px] h-[250px] md:w-[300px] md:h-[300px] bg-purple-600 rounded-full flex items-center justify-center"></div>
         <img
           src="/hero.png"
           alt="Profile"
-          className="relative w-40 h-65 sm:w-60 sm:h-80 object-cover "
+          className="relative w-auto h-[270px] md:w-auto md:h-[320px] object-cover "
         />
       </div>
     </div>
